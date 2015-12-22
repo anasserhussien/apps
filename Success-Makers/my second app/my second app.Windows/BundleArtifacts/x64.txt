@@ -1,0 +1,2 @@
+MainPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\my second app\my second app\my second app.Windows\bin\x64\Release\my second app.Windows_1.1.0.6_Bundle\my second app.Windows_1.1.0.6_x64.appx
+SymbolPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\my second app\my second app\my second app.Windows\AppPackages\my second app.Windows_1.1.0.6_Test\my second app.Windows_1.1.0.6_x64.appxsym

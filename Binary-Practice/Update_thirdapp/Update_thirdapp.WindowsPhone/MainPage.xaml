@@ -1,0 +1,76 @@
+﻿<Page
+    x:Class="Update_thirdapp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Update_thirdapp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:ad="using:AdDuplex.Universal.Controls.WinPhone.XAML"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.BottomAppBar>
+        <CommandBar Height="3" Background="#4A78AB"  Foreground="White">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="about" Opacity=".7" Background="#4A78AB"
+                             Click="AppBarButton_Click">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="i"
+                                  FontSize="25"
+                                  FontFamily="Segoe WP Black" />
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    
+    <Grid>
+
+        
+
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" Opacity=".3" ImageSource="Assets/main_back.png"/>
+        </Grid.Background>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height=".1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0" Margin="0,10,0,0">
+
+                <ad:AdControl x:Name="adDuplexAd" 
+                AppId="139319" />
+
+
+            </StackPanel>
+
+
+            <Image Grid.Row="1" Name="b1" Tapped="b1_Tapped" Source="/Assets/main_buttons/b1.png" />
+            <Image Grid.Row="3" Name="b2" Tapped="b2_Tapped" Source="/Assets/main_buttons/b2.png" />
+            <Image Grid.Row="5" Name="b3" Tapped="b3_Tapped" Source="/Assets/main_buttons/b3.png" />
+            <Image Grid.Row="7" Name="b4" Tapped="b4_Tapped" Source="/Assets/main_buttons/b4.png" />
+
+
+
+            <Image Name="easy" Visibility="Collapsed" Tapped="easy_Tapped" Grid.Row="3" Source="/Assets/main_buttons/easy.png" />
+            <Image Name="medium" Visibility="Collapsed" Tapped="medium_Tapped" Grid.Row="5" Source="/Assets/main_buttons/medium.png" />
+            <Image Name="hard"  Visibility="Collapsed" Tapped="hard_Tapped" Grid.Row="7" Source="/Assets/main_buttons/hard.png" />
+
+        </Grid>
+
+    </Grid>
+
+  
+
+</Page>

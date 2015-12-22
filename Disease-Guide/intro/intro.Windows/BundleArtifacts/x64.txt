@@ -1,0 +1,2 @@
+MainPackage=C:\Users\ahmed\Desktop\lap baba\Projects\intro\intro\intro.Windows\bin\x64\Release\intro.Windows_1.1.0.0_Bundle\intro.Windows_1.1.0.0_x64.appx
+SymbolPackage=C:\Users\ahmed\Desktop\lap baba\Projects\intro\intro\intro.Windows\AppPackages\intro.Windows_1.1.0.0_Test\intro.Windows_1.1.0.0_x64.appxsym

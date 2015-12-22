@@ -1,0 +1,4 @@
+MainPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\Update_thirdapp\Update_thirdapp\Update_thirdapp.WindowsPhone\bin\ARM\Release\Update_thirdapp.WindowsPhone_1.1.0.3_Bundle\Update_thirdapp.WindowsPhone_1.1.0.3_ARM.appx
+SymbolPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\Update_thirdapp\Update_thirdapp\Update_thirdapp.WindowsPhone\AppPackages\Update_thirdapp.WindowsPhone_1.1.0.3_Test\Update_thirdapp.WindowsPhone_1.1.0.3_ARM.appxsym
+ResourcePack=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\Update_thirdapp\Update_thirdapp\Update_thirdapp.WindowsPhone\bin\ARM\Release\Update_thirdapp.WindowsPhone_1.1.0.3_Bundle\Update_thirdapp.WindowsPhone_1.1.0.3_scale-100.appx
+ResourcePack=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\Update_thirdapp\Update_thirdapp\Update_thirdapp.WindowsPhone\bin\ARM\Release\Update_thirdapp.WindowsPhone_1.1.0.3_Bundle\Update_thirdapp.WindowsPhone_1.1.0.3_scale-140.appx

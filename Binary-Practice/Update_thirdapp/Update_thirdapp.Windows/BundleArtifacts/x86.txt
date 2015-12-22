@@ -1,0 +1,2 @@
+MainPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\Update_thirdapp\Update_thirdapp\Update_thirdapp.Windows\bin\x86\Release\Update_thirdapp.Windows_1.2.0.12_Bundle\Update_thirdapp.Windows_1.2.0.12_x86.appx
+SymbolPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\Update_thirdapp\Update_thirdapp\Update_thirdapp.Windows\AppPackages\Update_thirdapp.Windows_1.2.0.12_Test\Update_thirdapp.Windows_1.2.0.12_x86.appxsym

@@ -1,0 +1,104 @@
+﻿<Page
+    x:Class="intro.selection_list"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:intro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" Opacity=".5"  ImageSource="/Assets/main/tool2.png"/>
+        </Grid.Background>
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock FontSize="45" Name="page_title" Foreground="White" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+
+
+
+
+
+
+
+
+
+            <ListView Name="listbox1"  SelectionChanged="listbox1_SelectionChanged">
+                
+
+                        <Grid  Margin="6,10,6,10">
+                            <Grid  Background="White" Width="650"  Opacity=".8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border>
+                            <Image Source="/Assets/1.png"  Margin="5,10" Width="70" Height="70" />
+                                </Border>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+
+                            <TextBlock Foreground="#4A78AB" Text="Medicines" FontSize="50"/>
+                        </StackPanel>
+                            </Grid>
+                        </Grid>
+
+
+
+
+                <Grid  Margin="6,20,6,10">
+                    <Grid  Background="White" Width="650"  Opacity=".8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Border>
+                            <Image Source="/Assets/2.png" Width="60" Height="60" />
+                        </Border>
+
+                        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+
+                            <TextBlock Foreground="#4A78AB"  Margin="5,10" Text=" FAQ" FontSize="50"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+
+
+
+
+
+            </ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+        </Grid>
+    </Grid>
+</Page>

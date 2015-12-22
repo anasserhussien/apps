@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF012BE3-014A-4BEF-9E83-944B63BC2783}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>my_second_app</RootNamespace>
+    <AssemblyName>my second app.Windows</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>my second app.Windows_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>C6909A33BA85513C762B38952A643C137499F1A9</PackageCertificateThumbprint>
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Page Include="about.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BasicPage1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="story.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.xaml.cs">
+      <DependentUpon>about.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BasicPage1.xaml.cs">
+      <DependentUpon>BasicPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\NavigationHelper.cs" />
+    <Compile Include="Common\ObservableDictionary.cs" />
+    <Compile Include="Common\RelayCommand.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\BadgeContent.cs" />
+    <Compile Include="Services\Common.cs" />
+    <Compile Include="Services\ContentInterfaces.cs" />
+    <Compile Include="Services\TileContent.cs" />
+    <Compile Include="Services\ToastContent.cs" />
+    <Compile Include="story.xaml.cs">
+      <DependentUpon>story.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="Assets\Assembly logo\Thumbs.db" />
+    <None Include="my second app.Windows_StoreKey.pfx" />
+    <None Include="my second app.Windows_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\1.png" />
+    <Content Include="Assets\Assembly logo\About background.png" />
+    <Content Include="Assets\Assembly logo\Assembly 5-1.png" />
+    <Content Include="Assets\Assembly logo\Blue.png" />
+    <Content Include="Assets\Assembly logo\FBL.png" />
+    <Content Include="Assets\Assembly logo\Logo Icon 1.png" />
+    <Content Include="Assets\Assembly logo\Logo Icon.png" />
+    <Content Include="Assets\Assembly logo\Logo Icon2.png" />
+    <Content Include="Assets\Assembly logo\TL.png" />
+    <Content Include="Assets\DOB\Adam.jpg" />
+    <Content Include="Assets\DOB\Albert.jpg" />
+    <Content Include="Assets\DOB\Alexander.jpg" />
+    <Content Include="Assets\DOB\Bassem.jpg" />
+    <Content Include="Assets\DOB\Big.jpg" />
+    <Content Include="Assets\DOB\Bow.jpg" />
+    <Content Include="Assets\DOB\Bruce.jpg" />
+    <Content Include="Assets\DOB\Bryan.jpg" />
+    <Content Include="Assets\DOB\Chuck.jpg" />
+    <Content Include="Assets\DOB\Daniel.jpg" />
+    <Content Include="Assets\DOB\Didier.jpg" />
+    <Content Include="Assets\DOB\Eric.jpg" />
+    <Content Include="Assets\DOB\Eva.jpg" />
+    <Content Include="Assets\DOB\Ewan.jpg" />
+    <Content Include="Assets\DOB\Fernando.jpg" />
+    <Content Include="Assets\DOB\Freddie.jpg" />
+    <Content Include="Assets\DOB\Justin.jpg" />
+    <Content Include="Assets\DOB\Kurt.jpg" />
+    <Content Include="Assets\DOB\Kyrie.jpg" />
+    <Content Include="Assets\DOB\Lady.jpg" />
+    <Content Include="Assets\DOB\Lou.jpg" />
+    <Content Include="Assets\DOB\Lucy.jpg" />
+    <Content Include="Assets\DOB\Manuel.jpg" />
+    <Content Include="Assets\DOB\Mitt.jpg" />
+    <Content Include="Assets\DOB\Ronaldinho.jpg" />
+    <Content Include="Assets\DOB\Scott.jpg" />
+    <Content Include="Assets\DOB\Sergio.jpg" />
+    <Content Include="Assets\DOB\The.jpg" />
+    <Content Include="Assets\DOB\Tyrel.jpg" />
+    <Content Include="Assets\DOB\Will.jpg" />
+    <Content Include="Assets\graffiti\Banksy.jpg" />
+    <Content Include="Assets\graffiti\Dash.jpg" />
+    <Content Include="Assets\graffiti\Jean.jpg" />
+    <Content Include="Assets\graffiti\John.JPG" />
+    <Content Include="Assets\graffiti\Keith.jpg" />
+    <Content Include="Assets\graffiti\Neck.jpg" />
+    <Content Include="Assets\graffiti\Shepard.jpg" />
+    <Content Include="Assets\main\art.png" />
+    <Content Include="Assets\main\gra.png" />
+    <Content Include="Assets\main\photo.png" />
+    <Content Include="Assets\main\tech.png" />
+    <Content Include="Assets\Main_Logo2.png" />
+    <Content Include="Assets\painters\August.jpg" />
+    <Content Include="Assets\painters\Claude.jpg" />
+    <Content Include="Assets\painters\Jan.jpg" />
+    <Content Include="Assets\painters\Leonardo.jpg" />
+    <Content Include="Assets\painters\Michelangelo.jpg" />
+    <Content Include="Assets\painters\Pablo.jpg" />
+    <Content Include="Assets\painters\Paul.JPG" />
+    <Content Include="Assets\painters\Raphael.jpg" />
+    <Content Include="Assets\painters\Rembrandt.jpg" />
+    <Content Include="Assets\painters\Vincent.jpg" />
+    <Content Include="Assets\photo\Anne.jpg" />
+    <Content Include="Assets\photo\Annie.jpg" />
+    <Content Include="Assets\photo\Christian.jpg" />
+    <Content Include="Assets\photo\David.jpg" />
+    <Content Include="Assets\photo\Janae.jpg" />
+    <Content Include="Assets\photo\Jeremy.jpg" />
+    <Content Include="Assets\photo\Kait.jpg" />
+    <Content Include="Assets\photo\Mario.jpg" />
+    <Content Include="Assets\photo\Nicholas.jpg" />
+    <Content Include="Assets\photo\teve.jpg" />
+    <Content Include="Assets\photo\Timothy.jpg" />
+    <Content Include="Assets\quotes\Abraham.jpg" />
+    <Content Include="Assets\quotes\Dennis.jpg" />
+    <Content Include="Assets\quotes\Eleanor.jpg" />
+    <Content Include="Assets\quotes\John.jpg" />
+    <Content Include="Assets\quotes\Muhammad.jpg" />
+    <Content Include="Assets\quotes\Stephen.jpg" />
+    <Content Include="Assets\quotes\William.jpg" />
+    <Content Include="Assets\quotes\William2.jpg" />
+    <Content Include="Assets\Logo.scale-100.png" />
+    <Content Include="Assets\quotes\albert.jpg" />
+    <Content Include="Assets\quotes\edison.jpg" />
+    <Content Include="Assets\quotes\quote.png" />
+    <Content Include="Assets\SmallLogo.scale-100.png" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\Square310x310Logo.scale-100.png" />
+    <Content Include="Assets\Square70x70Logo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-140.png" />
+    <Content Include="Assets\StoreLogo.scale-180.png" />
+    <Content Include="Assets\tech\Douglas.jpg" />
+    <Content Include="Assets\tech\Dr.jpg" />
+    <Content Include="Assets\tech\Gerald.jpg" />
+    <Content Include="Assets\tech\Jack.jpg" />
+    <Content Include="Assets\tech\Ken.jpg" />
+    <Content Include="Assets\tech\Marty.jpg" />
+    <Content Include="Assets\tech\nathaniel.jpg" />
+    <Content Include="Assets\tech\Norman.jpg" />
+    <Content Include="Assets\tech\Robert.jpg" />
+    <Content Include="Assets\tech\Tim.jpg" />
+    <Content Include="Assets\Wide310x150Logo.scale-100.png" />
+    <Content Include="NotificationsExtensions.csproj" />
+    <None Include="Package.StoreAssociation.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="AdDuplex.Win.Extension, Version=9.0.0.0">
+      <Name>AdDuplex SDK for Windows 8.1 %28XAML edition%29</Name>
+    </SDKReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="..\my second app.Shared\my second app.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

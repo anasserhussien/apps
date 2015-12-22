@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="intro.medicines_list"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:intro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" Opacity=".5"  ImageSource="/Assets/main/tool2.png"/>
+        </Grid.Background>
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="19,0,0,0">
+            <TextBlock Text="" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Name="page_title" FontSize="35"  Foreground="White" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+
+            <ListView Name="med_list"  SelectionChanged="med_list_SelectionChanged">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <Grid  Margin="6">
+
+
+                            <Grid  Background="White" Width="650"  Opacity=".8">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Background="#545454">
+                                    <Image Source="{Binding img}" Width="50" Height="50" />
+                                </Border>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Top">
+
+                                    <TextBlock Text="{Binding name}" FontSize="27" Foreground="#4A78AB"/>
+                                </StackPanel>
+                            </Grid>
+
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+        </Grid>
+    </Grid>
+</Page>

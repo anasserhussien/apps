@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="intro.Main"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:intro"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:ad="using:AdDuplex.Universal.Controls.WinPhone.XAML"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+
+    <Page.BottomAppBar>
+        <CommandBar Height="3" Background="#4A78AB"  Foreground="White">
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Label="about" Opacity=".7" Background="#4A78AB"
+                             Click="AppBarButton_Click">
+                    <AppBarButton.Icon>
+                        <FontIcon Glyph="i"
+                                  FontSize="25"
+                                  FontFamily="Segoe WP Black" />
+                    </AppBarButton.Icon>
+                </AppBarButton>
+
+
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" Opacity=".5" ImageSource="/Assets/main/tool2.png"/>
+        </Grid.Background>
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,0">
+            
+            <ad:AdControl x:Name="adDuplexAd" 
+                AppId="137251" />        
+           
+            
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".2*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height="1*" />
+                <RowDefinition Height=".2*" />
+            </Grid.RowDefinitions>
+            
+            <Grid Grid.Column="0" Grid.Row="1">
+                <Image Source="/Assets/main/heart.png" Name="heart" Tapped="heart_Tapped" />
+                
+            </Grid>            
+
+            <Grid Grid.Column="0" Grid.Row="2">
+                <Image Name="hyper" Tapped="hyper_Tapped" Source="/Assets/main/hypertension.png"/>
+            </Grid>
+
+
+
+
+            <Grid Grid.Column="1" Grid.Row="1">
+                <Image Name="diabetes" Tapped="diabetes_Tapped" Source="/Assets/main/diabetes.png" />
+
+            </Grid>
+
+
+            <Grid Grid.Column="1" Grid.Row="2">
+                <Image Name="liver" Tapped="liver_Tapped" Source="/Assets/main/liver.png"/>
+            </Grid>
+
+
+
+
+
+
+
+
+        </Grid>
+        
+        
+        
+        
+    </Grid>
+</Page>

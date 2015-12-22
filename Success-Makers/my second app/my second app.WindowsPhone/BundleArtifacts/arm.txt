@@ -1,0 +1,4 @@
+MainPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\my second app\my second app\my second app.WindowsPhone\bin\ARM\Release\my second app.WindowsPhone_1.1.0.2_Bundle\my second app.WindowsPhone_1.1.0.2_ARM.appx
+SymbolPackage=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\my second app\my second app\my second app.WindowsPhone\AppPackages\my second app.WindowsPhone_1.1.0.2_Test\my second app.WindowsPhone_1.1.0.2_ARM.appxsym
+ResourcePack=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\my second app\my second app\my second app.WindowsPhone\bin\ARM\Release\my second app.WindowsPhone_1.1.0.2_Bundle\my second app.WindowsPhone_1.1.0.2_scale-100.appx
+ResourcePack=C:\Users\ahmed\Documents\Visual Studio 2013\Projects\my second app\my second app\my second app.WindowsPhone\bin\ARM\Release\my second app.WindowsPhone_1.1.0.2_Bundle\my second app.WindowsPhone_1.1.0.2_scale-140.appx
